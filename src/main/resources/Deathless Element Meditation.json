@@ -1,0 +1,165 @@
+{
+  "name": "Meditation on Feeling of Peacefulness",
+  "words": [
+    {
+      "word": "etaṁ",
+      "type": "demon. pro.",
+      "translation": "this is",
+      "synonyms": "there/here is"
+    },
+    {
+      "word": "santaṁ",
+      "parts": [
+        {
+          "word": "santa",
+          "translation": "calmed, tranquil, peaceful, pure"
+        }
+      ],
+      "type": "acc. sing.",
+      "translation": "peaceful"
+    },
+    {
+      "word": "etaṁ",
+      "translation": "this is"
+    },
+    {
+      "word": "paṇītaṁ",
+      "parts": [
+        {
+          "word": "paṇīta",
+          "type": "adj.",
+          "parts": [
+            {
+              "word": "pa",
+              "type": "ind.",
+              "translation": "directional-forth"
+            },
+            {
+              "word": "neti",
+              "type": "ind. pp.",
+              "translation": "guide, carry"
+            }
+          ]
+        }
+      ],
+      "type": "acc. sing.",
+      "translation": "sublime",
+      "synonyms": "excellent, delicious"
+    },
+    {
+      "word": "yadidaṁ",
+      "parts": [
+        {
+          "word": "yaṁ",
+          "type": "adverb",
+          "translation": "which"
+        },
+        {
+          "word": "idaṁ",
+          "type": "neu. demon. pro.",
+          "translation": "this"
+        }
+      ],
+      "type": "ind.",
+      "translation": "which is",
+      "synonyms": "namely, that is"
+    },
+    {
+      "word": "sabbasaṅkhārasamatho",
+      "parts": [
+        {
+          "word": "sabba",
+          "type": "adj.",
+          "translation": "whole"
+        },
+        {
+          "word": "saṅkhāra",
+          "type": "masc.",
+          "translation": "essential condition, mental coefficient"
+        },
+        {
+          "word": "samatha",
+          "type": "masc.",
+          "translation": "calm, legally settled"
+        }
+      ],
+      "type": "nom.",
+      "translation": "calming of all mental conditioning"
+    },
+    {
+      "word": "sabbūpadhipaṭinissaggo",
+      "parts": [
+        {
+          "word": "sabba"
+        },
+        {
+          "word": "upadhi",
+          "parts": [
+            { "word": "upa" },
+            { "word": "dhā" }
+          ],
+          "translation": "wordly possessions; attachment to",
+          "type": "masc."
+        },
+        {
+          "word": "paṭi",
+          "translation": "against adj."
+        },
+        {
+          "word": "nissaggo",
+          "translation": "give forth, natural state, nature",
+          "parts": [
+            { "word": "ni", "translation": "down, out" },
+            { "word": "sagga", "translation": "place like heaven", "type": "masc." }
+          ]
+        }
+      ],
+      "type": "nom. sing.",
+      "translation": "not giving forth all objects of attachment"
+    },
+    {
+      "word": "taṇhākkhayo",
+      "parts": [
+        { "word": "taṇhā", "translation": "desire for food, general desire" },
+        { "word": "khaya", "translation": "wasting or wearing away, diminution, using up, exhaustion, ending, destruction", "type": "masc." }
+      ],
+      "type": "nom. voc. acc. plur.",
+      "translation": "ending of desire"
+    },
+    {
+      "word": "virāgo",
+      "parts": [
+        {
+          "word": "vi ",
+          "translation": "not"
+        },
+        {
+          "word": "raga",
+          "translation": "passion"
+        }
+      ],
+      "type": "masc.",
+      "translation": "dispassion"
+    },
+    {
+      "word": "nirodho",
+      "parts": [
+        {
+          "word": "nirodha"
+        }
+      ],
+      "type": "nom.",
+      "translation": "cessation of perception and feeling"
+    },
+    {
+      "word": "nibbānan",
+      "parts": [
+        {
+          "word": "nibbāna"
+        }
+      ],
+      "type": "?",
+      "translation": "cessation (happiness)"
+    }
+  ]
+}
