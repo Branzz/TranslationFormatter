@@ -36,7 +36,7 @@ public class PaliFormatter {
 	}
 
 	public String formattedName(String name) {
-		return String.format(nameFormatter, name);
+		return nameFormatter.replace("{}", name);
 	}
 
 }

@@ -35,7 +35,7 @@ public class JSONTranslator<T> {
 			String path = JSONTranslator.class.getResource("/output/").getPath();
 			File file = new File(path + fileName);
 			if (file.exists()) {
-				System.out.println("> Note you may be overriding another file with the same name <");
+				System.out.println("> You may be overriding another file with the same name <");
 			}
 			file.createNewFile();
 			try (OutputStream fos = Files.newOutputStream(file.toPath());

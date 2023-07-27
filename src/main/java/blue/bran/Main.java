@@ -8,8 +8,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		translate("Deathless Element Meditation.json", "Transliteration of Deathless Element Meditation.txt", transliteration);
+		// translate("Deathless Element Meditation.json", "Transliteration of Deathless Element Meditation.txt", transliteration);
 
+		translate("Deathless Element Meditation.json", "Deathless.html", html);
 	}
 
 	public static void translate(String jsonFileName, String outputFileName, PaliFormatter formatter) {
@@ -28,9 +29,10 @@ public class Main {
 	 * <p>
 	 * the numbers on the left is the order of json terms specified in WordTranslation's fields
 	 * not all are necessary, and they can go in any order
-	 * the second line is the format for the inner word parts. This won't show if there aren't any word parts
+	 * the Strings on the right are included if the json field was found
+	 * the second line is the format for the inner word parts
 	 */
-	static final PaliFormatter fullDisplay = new PaliFormatter(
+	static final PaliFormatter full = new PaliFormatter(
 			"132\n45\n", new String[] { "**{}**", " - {}", " {}", "__{}__", " / {}" },
 			"14532", new String[] { "{}", " {}", "/ {} ", "{} ", "{}" }
 	);
@@ -38,7 +40,7 @@ public class Main {
 			"4", new String[] { "{} ", "", "", "", "" },
 			"", new String[] { "", "", "", "", "" }
 	);
-	static final PaliFormatter paliParts = new PaliFormatter(
+	static final PaliFormatter parts = new PaliFormatter(
 			"13", new String[] { "{} ", "({}) ", "", "", "" },
 			"13", new String[] { "{}", " ({})", "", "", "" }
 	);
@@ -46,12 +48,17 @@ public class Main {
 			"14\n", new String[] { "{}", " {}", "", "", "" },
 			"", new String[] { "", "", "", "", "" }
 	);
-	static final PaliFormatter pali = new PaliFormatter(
+	static final PaliFormatter plain = new PaliFormatter(
 			"1", new String[] { "{} ", "", "", "", "" },
 			"", new String[] { "", "", "", "", "" }
 	);
-	static final PaliFormatter cover = new PaliFormatter( // spoilers on each basic term for memorizing
+	static final PaliFormatter spoiler = new PaliFormatter( // tool for memorizing
 			"1 ", new String[] { "||{}||", " ", "", "", "" },
 			"", new String[] { "", "", "", "", "" }
+	);
+	static final PaliFormatter html = new PaliFormatter(
+			"<div>132<br>45</div><br>\n", new String[] { "<strong>{}</strong>", " - {}", " {}", " <underline>{}</underline>", " / {}" },
+			"<small id=\"parts\">14532</small>", new String[] { " {}", " {}", " / {}", " {}", " {}" },
+			"<h2>{}</h2>\n<style> *{ font-family: Noto, \"EB Garamond\", \"Source Pro\", \"Merriweather Sans\", serif; } #parts {  } </style>\n<br>\n"
 	);
 }
