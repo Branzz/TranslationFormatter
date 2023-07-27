@@ -7,13 +7,19 @@ public class PaliFormatter {
 	final String innerFormatOrder;
 	final String[] innerFormat;
 	final int[] rearranger;
+	final String nameFormatter;
 
-	public PaliFormatter(String formatOrder, String[] format, String innerFormatOrder, String[] innerFormat) {
+	public PaliFormatter(String formatOrder, String[] format, String innerFormatOrder, String[] innerFormat, String nameFormatter) {
 		this.formatOrder = formatOrder;
 		this.format = format;
 		this.innerFormatOrder = innerFormatOrder;
 		this.innerFormat = innerFormat;
 		rearranger = formatOrder.chars().filter(Character::isDigit).map(c -> c - '0').toArray();
+		this.nameFormatter = nameFormatter;
+	}
+
+	public PaliFormatter(String formatOrder, String[] format, String innerFormatOrder, String[] innerFormat) {
+		this(formatOrder, format, innerFormatOrder, innerFormat, "## {}\n\n");
 	}
 
 	public String fillFormat(boolean inner, Object... args) {
@@ -28,4 +34,9 @@ public class PaliFormatter {
 		int rearrangedInd = rearranger[ind] - 1;
 		return result.replace(String.valueOf(rearrangedInd + 1), args[rearrangedInd] == null ? "" : (inner ? innerFormat : format)[ind].replace("{}", args[rearrangedInd].toString()));
 	}
+
+	public String formattedName(String name) {
+		return String.format(nameFormatter, name);
+	}
+
 }

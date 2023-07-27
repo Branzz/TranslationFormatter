@@ -10,7 +10,10 @@ public class Phrase {
 	List<WordTranslation> words = new ArrayList<>();
 
 	public String toString(PaliFormatter paliFormatter) {
-		return "## " + name + "\n\n" + words.stream().map(w -> w.toString(paliFormatter, false)).collect(Collectors.joining(""));
+		return paliFormatter.formattedName(name) +
+			               words.stream()
+								.map(w -> w.toString(paliFormatter, false))
+								.collect(Collectors.joining(""));
 	}
 
 }
